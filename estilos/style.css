@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.border{
+    border: 1px solid black;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#cuerpo{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "menu peliculas peliculas"
+    "menu estrenos estrenos" 
+    "menu footer footer"   
+    ;
+    grid-template-columns: 20% auto 10%;
+    grid-template-rows: 100px 2fr  2fr 50px;
+}   
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header{
+    
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+section#peliculas{
+    grid-area: peliculas;
+    background-image: url(../imagenes/peliculasyseries.jpg);
+    
+}
+section#estrenos{
+    grid-area: estrenos;
+    background-image: url(../imagenes/peliculasyseries.jpg);
+}
+
+nav{
+    grid-area: menu;
+    background-color: rgb(116, 115, 122);
+}
