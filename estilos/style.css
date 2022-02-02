@@ -32,6 +32,9 @@ div img{
 a{
     text-decoration: none;
 }
+.mas{
+    transform: translateX(60vh);
+}
 
 #cuerpo{
     display: grid;
